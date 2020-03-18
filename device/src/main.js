@@ -3,10 +3,32 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { Field } from 'vant';
+import { Button } from 'vant';
+import { Dialog } from 'vant';
+import { Toast } from 'vant';
+import { Notify } from 'vant';
+import { NumberKeyboard } from 'vant';
+import '@vant/touch-emulator';
+import "./assets/css/vantChange.css"
+
+
+Vue.use(Field);
+Vue.use(Button);
+Vue.use(Dialog);
+Vue.use(Toast);
+Vue.use(Notify);
+Vue.use(NumberKeyboard);
+
+
+Vue.prototype.$dialog=Dialog
+Vue.prototype.$toast=Toast
+
+
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,

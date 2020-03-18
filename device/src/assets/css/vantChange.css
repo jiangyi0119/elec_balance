@@ -1,0 +1,142 @@
+.van-tabs--line .van-tabs__wrap {
+  height: 120px;
+  padding: 0 100px;
+}
+
+.van-tab {
+  line-height: 120px;
+  font-size: 30px;
+  color: #999;
+}
+.van-tab__pane{
+  height: 100%;
+}
+.van-tabs__content{
+  height: calc(100% - 120px);
+  overflow: hidden;
+
+  /* border: 1px solid red; */
+}
+.van-tabs__line {
+  background-color: #1e70ec;
+  height: 4px;
+}
+
+.van-tab--active {
+  color: #1e70ec
+}
+
+/* 输入验证码 */
+.van-password-input {
+  width: 100%;
+  height: 100%;
+}
+
+.van-cell {
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.van-cell__value {
+  text-align: right;
+}
+
+.asider .van-cell__value {
+  text-align: left;
+}
+
+.van-picker__toolbar {
+  height: 88px;
+  display: flex;
+  align-items: center;
+}
+
+.van-popup__close-icon {
+  font-size: 40px;
+}
+
+/* 城市列表 */
+.van-index-bar__index {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.van-index-anchor {
+  text-align: left;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  padding: 0px 30px;
+}
+
+.van-cell {
+  padding: 0px 30px;
+}
+
+.van-cell__title {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #f2f5fb;
+}
+.van-search{
+  padding: 20px 30px;
+}
+.van-search .van-cell{
+  height: 60px;
+}
+/* 设置滚动条宽度 */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+.van-toast{
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+}
+.van-key{
+  height: 100px;
+  line-height: 100px;
+  font-size: 30px;
+}
+.van-ellipsis{
+  font-size:38px!important;
+}
+.van-overlay{
+  z-index:800!important;
+}
+
+.dialog-style{
+  width:420px;
+  min-height: 200px;
+  z-index:900!important;
+  font-size:32px;
+}
+
+.dialog-style .van-dialog__header{
+
+}
+.dialog-style .van-dialog__content .van-dialog__message{
+  font-size:32px;
+  min-height: 100px;
+  line-height: 100px;
+}
+.dialog-style .van-button__text{
+  font-size:32px;
+}
+.dialog-style .van-dialog__footer{
+  height: 70px;
+  line-height: 70px;
+}
+
+.van-picker button{
+  font-size:38px!important;
+}

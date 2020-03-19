@@ -36,8 +36,10 @@
       <van-number-keyboard
         v-model="activeCode"
         :show="keywordShowStatus"
-        :maxlength="6"
+        :maxlength="32"
         @blur="keywordShowStatus = false"
+        theme="custom"
+        close-button-text="完成"
       />
   </div>
 </template>
@@ -115,25 +117,25 @@
     padding:0px!important;
    }
   .input-active-code .van-cell__title {
-    font-size:20px;
+    font-size:18px;
   }
   .input-active-code input{
-    margin-left:15px;
+    /* margin-left:15px; */
     height: 30px;
     font-size:20px;
-    width:230px;
+    width:220px;
     text-align: center;
+    border:1px solid #DDDDDD;
   }
   .active-btn{
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        background: #0097CF;
-        border-radius: 4px;
-        border: none;
-        color: #fff;
-
-        font-size: 24px;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      background: #0097CF;
+      border-radius: 4px;
+      border: none;
+      color: #fff;
+      font-size: 18px;
   }
   .active-link{
     font-size:18px;

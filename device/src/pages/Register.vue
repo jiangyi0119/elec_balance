@@ -45,7 +45,7 @@
         <div class="active-item">
           <van-button class="btn active-btn" @click="doActive()" type="info">立即注册</van-button>
         </div>
-        <div class="active-link">
+        <div class="active-link">已有账号？，点击<label @click="gotoLogin()">这里</label>注册账号
         </div>
 
 
@@ -89,11 +89,11 @@
             mobile:"",//商户手机号码
             password:'',//商户密码
             confirmPassword:'',//商户确认密码
-            
+
             mobileKeyboardStatus:false,
             passwordKeyboardStatus:false,
             confirmPasswordKeyboardStatus:false,
-             
+
         }
     },
     created() {
@@ -108,8 +108,9 @@
     },
     methods:{
 
-      doActive:function(){
-        this.$router.push({name:'Register'});
+      //转至登录页
+      gotoLogin:function(){
+        this.$router.push({name:'Login'});
       },
       //获取激活码提示
       getActiveCode:function(){
@@ -127,7 +128,7 @@
     position:absolute;
     clear: both;
     width:400px;
-    height:350px;
+    height:380px;
     border-radius: 30px;
     background:#FFFFFF;
     overflow: hidden;
@@ -185,9 +186,9 @@
 
     width:80%;
     margin: auto;
-    margin-top:30px;
+    margin-top:10px;
   }
-  .active-link span label{
+  .active-link label{
     color:#FF0000;
   }
 </style>

@@ -11,6 +11,7 @@ import { Notify } from 'vant';
 import { NumberKeyboard } from 'vant';
 import '@vant/touch-emulator';
 import "./assets/css/vantChange.css"
+import { Grid, GridItem } from 'vant';
 
 
 Vue.use(Field);
@@ -19,7 +20,8 @@ Vue.use(Dialog);
 Vue.use(Toast);
 Vue.use(Notify);
 Vue.use(NumberKeyboard);
-
+Vue.use(Grid);
+Vue.use(GridItem);
 
 Vue.prototype.$dialog=Dialog
 Vue.prototype.$toast=Toast
